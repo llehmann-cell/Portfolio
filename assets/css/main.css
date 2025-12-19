@@ -3542,3 +3542,7 @@ html {
 		margin-bottom: 0 !important;
 	}
 }
+
+.hidden-project {
+	display: none;
+}
