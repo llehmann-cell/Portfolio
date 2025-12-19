@@ -2760,7 +2760,7 @@ input[type="button"]:disabled,
 
 #header .image.avatar {
 	margin: 0 0 1em 0;
-	width: 6.25em;
+	width: 15em;
 }
 
 /* Footer */
@@ -2812,6 +2812,8 @@ input[type="button"]:disabled,
 	border-top: solid 2px #efefef;
 	margin: 4em 0 0 0;
 	padding: 4em 0 0 0;
+	scroll-margin-top: 4em;
+	/* Match desktop navbar height */
 }
 
 #main>section:first-child {
@@ -3240,6 +3242,11 @@ body.is-touch .poptrox-popup .closer {
 		margin: 0;
 		padding: 6em 4em;
 		width: 100%;
+	}
+
+	#main>section {
+		scroll-margin-top: 3.5em;
+		/* Match mobile/tablet sticky navbar height */
 	}
 
 }
