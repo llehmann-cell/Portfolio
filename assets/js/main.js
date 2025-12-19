@@ -125,13 +125,13 @@
 
 			if ($hiddenProjects.is(':visible')) {
 				$hiddenProjects.fadeOut();
-				$toggleButton.text('Full Portfolio');
+				$toggleButton.text('Voir tous les projets');
 			} else {
 				$hiddenProjects.fadeIn().css('display', 'inline-block');
 				if (breakpoints.active('<=xsmall')) {
 					$hiddenProjects.css('display', 'block');
 				}
-				$toggleButton.text('Show Less');
+				$toggleButton.text('Voir moins');
 			}
 
 			return false;
