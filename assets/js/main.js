@@ -121,18 +121,20 @@
 
 		$toggleButton.on('click', function (e) {
 			e.preventDefault();
+			e.stopImmediatePropagation();
 
 			if ($hiddenProjects.is(':visible')) {
 				$hiddenProjects.fadeOut();
 				$toggleButton.text('Full Portfolio');
 			} else {
 				$hiddenProjects.fadeIn().css('display', 'inline-block');
-				// Fix for grid layout if needed
 				if (breakpoints.active('<=xsmall')) {
 					$hiddenProjects.css('display', 'block');
 				}
 				$toggleButton.text('Show Less');
 			}
+
+			return false;
 		});
 	});
 

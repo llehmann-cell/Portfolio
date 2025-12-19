@@ -3546,3 +3546,13 @@ html {
 .hidden-project {
 	display: none;
 }
+
+#toggle-projects {
+	position: relative;
+	z-index: 10;
+	cursor: pointer;
+}
+
+#main>section {
+	position: relative;
+}
